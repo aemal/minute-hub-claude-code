@@ -21,6 +21,7 @@ export type Database = {
           title: string;
           meeting_date: string;
           transcript: string | null;
+          summary: string | null;
           created_at: string;
         };
         Insert: {
@@ -29,6 +30,7 @@ export type Database = {
           title: string;
           meeting_date: string;
           transcript?: string | null;
+          summary?: string | null;
           created_at?: string;
         };
         Update: {
@@ -37,6 +39,7 @@ export type Database = {
           title?: string;
           meeting_date?: string;
           transcript?: string | null;
+          summary?: string | null;
           created_at?: string;
         };
       };
